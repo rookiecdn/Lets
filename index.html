@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GetME</title>
+    <link rel="stylesheet" href="css/GetMe.css">
+    <script src="js/GameInit.js" type="module"></script>
+    <script src="js/GetMe.js" type="module"></script>
+    <script src="js/jquery.js"></script>
+</head>
+<body>
+<!--面板区域-->
+    <div id="GetMePanel">
+        <!-- 游戏开始 -->
+        <!--游戏标题-->
+        <div id="GetMeTitle">GetMe</div>
+        <!--计时区域-->
+        <div id="GetMeRule">
+            <div id="RuleText" class="RuleTextFontCommon">
+                <div class="RuleTextScore">
+                    <div class="RuleTextPaddCommon">SCORE</div>
+                    <div class="RuleTextFontNum" id="SCORE"></div>
+                </div>
+                <div class="RuleTextTime">
+                    <div class="RuleTextPaddCommon">TIME</div>
+                    <div class="RuleTextFontNum" id="TIME"></div>
+                </div>
+                <div class="RuleTextMusic">
+                    <div class="RuleTextPaddCommon">MUSIC</div>
+                    <div></div>
+                </div>
+            </div>
+            <div id="GetMeRulePlatform">
+                <div id="Desk"></div>
+                <div id="Obstacle"></div>
+            </div>
+        </div>
+        <!--游戏区域-->
+        <div id="GetMePlayArea"></div>
+        <!--游戏成绩榜-->
+        <div id="mubu"></div>
+        <div id="Rank">
+            <div class="RankPanel">
+                <h3> GAME OVER </h3>
+                <div class="content">
+                    <div class="contentList">得分:<span id="marks"></span></div>
+                    <div class="contentList">评分:<span id="level"></span></div>
+                    <div class="contentList" id="start"></div>
+                    <input type="button" class="contentInput" id="AgainBtn" value="再玩一次">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
